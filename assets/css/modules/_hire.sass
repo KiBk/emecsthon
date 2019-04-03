@@ -23,7 +23,7 @@
   align-items: center
   color: $white
 
-  input[type="submit"]
+  input[type="button"]
     width: 400px
     max-width: 100%
     line-height: 50px
@@ -42,7 +42,7 @@
     width: 100%
     flex-direction: column
     align-items: center
-    margin: 30px 0
+    margin: 30px 0 0 0
 
     .options-a
       display: flex
@@ -55,73 +55,103 @@
       flex-wrap: wrap
       justify-content: space-around
 
-    label
+    img
       display: block
       width: 200px
       margin-bottom: 30px
       line-height: 50px
-      font-size: 16px
-      font-weight: 700
-      text-align: center
-      border: 2px solid $white
-      cursor: pointer
-      transition: background-color .2s ease-in-out, border-color .2s ease-in-out
+      //font-size: 16px
+      //font-weight: 700
+      //text-align: center
+      //border: 2px solid $white
+      //cursor: pointer
+      //transition: background-color .2s ease-in-out, border-color .2s ease-in-out
+      transition: 0.5s ease-in-out
 
-      svg
-        position: relative
-        left: -5px
-        width: 0
-        fill: $white
-        transition: width .2s ease-in-out
+    img:hover
+      transform: scale(1.2, 1.2)
 
-    input[type="checkbox"]
-      display: none
+      //&:nth-child(1)
+      //  background-image: url("../img/hire-sponsor-lattice.jpg")
+      //
+      //&:nth-child(2)
+      //  background-image: url("../img/hire-sponsor-lattice.jpg")
+      //
+      //&:nth-child(3)
+      //  background-image: url("../img/hire-sponsor-lattice.jpg")
+      //
+      //&:nth-child(4)
+      //  background-image: url("../img/hire-sponsor-lattice.jpg")
+      //
+      //&:nth-child(5)
+      //  background-image: url("../img/hire-sponsor-lattice.jpg")
+      //
+      //&:nth-child(6)
+      //  background-image: url("../img/hire-sponsor-lattice.jpg")
 
-      &:checked + label
-        background-color: $highlight
-        border-color: $highlight
+      //&:hover
+      //  transform: scale(1.2, 1.2)
 
-        & svg
-          width: 15px
+      //svg
+      //  position: relative
+      //  left: -5px
+      //  width: 0
+      //  fill: $white
+      //  transition: width .2s ease-in-out
+
+    //input[type="checkbox"]
+    //  display: none
+    //
+    //  &:checked + label
+    //    background-color: $highlight
+    //    border-color: $highlight
+    //
+    //    & svg
+    //      width: 15px
 
   &--information
-    display: flex
+    //display: flex
     width: 100%
-    justify-content: space-between
+    //justify-content: space-between
     margin-bottom: 60px
 
-    .information-name,
-    .information-email
-      position: relative
-      width: 45%
-      height: 50px
-      font-size: 30px
-      font-weight: 300
+    h3
+      font-size: 24px
+      text-align: center
 
-    input[type="text"],
-    input[type="email"]
-      width: 100%
-      padding: 0 0 5px 0
-      background-color: transparent
-      border: none
-      border-bottom: 1px solid $white
-      border-radius: 0
+    //input[type="text"],
+    //input[type="email"]
+    //  width: 100%
+    //  padding: 0 0 5px 0
+    //  background-color: transparent
+    //  border: none
+    //  border-bottom: 1px solid $white
+    //  border-radius: 0
+    //
+    //  &:focus
+    //    outline: none
+    //    background-color: $black
 
-      &:focus
-        outline: none
-        background-color: $black
+    img
+      display: block
+      margin-left: auto
+      margin-right: auto
+      width: 200px
+      //font-size: 16px
+      //font-weight: 700
+      //text-align: center
+      //border: 2px solid $white
+      //cursor: pointer
+      //transition: background-color .2s ease-in-out, border-color .2s ease-in-out
+      transition: 0.5s ease-in-out
 
-    label
-      position: absolute
-      top: 0
-      left: 0
-      pointer-events: none
-      transition: top .2s ease-in-out, font-size .2s ease-in-out
+    img:hover
+      transform: scale(1.2, 1.2)
 
-    input:focus + label,
-    input.has-value + label
-      top: -15px
-      font-size: 14px
+    //input:focus + label,
+    //input.has-value + label
+    //  top: -15px
+    //  font-size: 14px
 
 @media (max-width: 767px)
 
@@ -146,17 +176,17 @@
       @media (max-width: 415px)
         justify-content: space-between
 
-      label
+      img
         width: 150px
         margin-bottom: 15px
         font-size: 14px
 
-      input[type="checkbox"]
-
-        &:checked + label
-
-          & svg
-            width: 12px
+      //input[type="checkbox"]
+      //
+      //  &:checked + label
+      //
+      //    & svg
+      //      width: 12px
 
     &--information
       margin-bottom: 30px
