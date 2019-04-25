@@ -1,6 +1,6 @@
 # [EMECSthon, embedded students hackathon website](https://emecsthon.eit.uni-kl.de)
 
-## [About]
+## About
 
 EMECSthon is a hackathon organised by students at TU Kaiserslautern. Participants should develop an Embedded System of any sort, using given hardware. Provided HW is STM32 MCU and Xilinx FPGA. 
 
