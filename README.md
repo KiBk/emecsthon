@@ -1,4 +1,4 @@
-# [EMECSthon, embedded students hackathon website](https://emecsthon.eit.uni-kl.de)
+# [EMECSthon, embedded students hackathon](https://emecsthon.eit.uni-kl.de)
 
 ## About
 
