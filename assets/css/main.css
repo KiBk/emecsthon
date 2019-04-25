@@ -536,7 +536,7 @@ body {
     .intro--options > a {
       max-width: 250px;
       text-decoration: none;
-      color: rgba(205, 205, 205, 0.67);
+      color: #05386b;
       transition: color 0.2s ease-in-out; }
       .intro--options > a:hover {
         color: #05386b; }
@@ -769,11 +769,11 @@ body {
       background-size: cover;
       background-repeat: no-repeat; }
       .about--options > a:nth-child(1) {
-        background-image: url("../img/about-winners.jpg"); }
+        background-image: url("../img/about-smart-home.jpg"); }
       .about--options > a:nth-child(2) {
-        background-image: url("../img/about-philosophy.jpg"); }
+        background-image: url("../img/about-machine-learning.jpg"); }
       .about--options > a:nth-child(3) {
-        background-image: url("../img/about-history.jpg"); }
+        background-image: url("../img/about-smth-else.jpg"); }
       .about--options > a:hover h5 {
         bottom: -50px; }
     .about--options h5 {
@@ -926,7 +926,10 @@ body {
       justify-content: space-around; }
     .work-request--options img {
       display: block;
-      width: 200px;
+      max-width: 200px;
+      max-height: 80px;
+      width: auto;
+      height: auto;
       margin-bottom: 30px;
       line-height: 50px;
       transition: 0.5s ease-in-out; }
@@ -943,6 +946,7 @@ body {
       margin-left: auto;
       margin-right: auto;
       width: 200px;
+      height: auto;
       transition: 0.5s ease-in-out; }
     .work-request--information img:hover {
       transform: scale(1.2, 1.2); }
@@ -963,15 +967,14 @@ body {
       justify-content: space-between; } }
 @media (max-width: 600px) {
     .work-request--options img {
-      width: 150px;
+      max-width: 150px;
+      max-height: 60px;
+      width: auto;
+      height: auto;
       margin-bottom: 15px;
       font-size: 14px; }
   .work-request--information {
-    margin-bottom: 30px; }
-    .work-request--information .information-name,
-    .work-request--information .information-email {
-      height: 40px;
-      font-size: 24px; } }
+    margin-bottom: 30px; } }
 .perspective {
   position: relative;
   width: 100%;
