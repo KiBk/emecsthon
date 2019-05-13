@@ -745,12 +745,18 @@ body {
       border: 10px solid #93e1c6; }
   .about--sentence {
     max-width: 600px; }
-    .about--sentence h4 {
-      position: relative;
-      margin-top: 15px;
-      font-size: 28px;
-      font-weight: 700;
-      line-height: 1; }
+    .about--sentence a {
+      text-decoration: none; }
+      .about--sentence a h4 {
+        color: #05386b;
+        position: relative;
+        margin-top: 15px;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1;
+        transition: 0.5s ease-in-out; }
+      .about--sentence a h4:hover {
+        text-shadow: 3px 3px 5px rgba(205, 205, 205, 0.67); }
   .about--options {
     display: flex;
     max-width: 600px;
@@ -769,7 +775,7 @@ body {
       background-size: cover;
       background-repeat: no-repeat; }
       .about--options > a:nth-child(1) {
-        background-image: url("../img/about-smart-home.jpg"); }
+        background-image: url("../img/about-question-mark.jpg"); }
       .about--options > a:nth-child(2) {
         background-image: url("../img/about-machine-learning.jpg"); }
       .about--options > a:nth-child(3) {
@@ -810,8 +816,6 @@ body {
       margin-left: 0;
       width: 300px;
       height: 168.75px; }
-  .about--sentence {
-    display: none; }
   .about--options {
     display: none; } }
 .contact {
